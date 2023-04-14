@@ -1,0 +1,125 @@
+:root {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-family: "Manrope", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, max-content);
+  justify-content: center;
+  background-color: hsl(218, 23%, 16%);
+}
+
+main {
+  position: relative;
+  margin-top: 110px;
+  width: 500px;
+  height: 300px;
+  border-radius: 20px;
+  box-shadow: 10px 20px 20px 10px;
+  background-color: hsl(217, 19%, 24%);
+}
+
+main > section > span {
+  position: relative;
+  margin: 0;
+  bottom: -45px;
+  color: hsl(217, 19%, 38%);
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+section > p {
+  width: 500px;
+  height: 120px;
+  text-rendering: auto;
+}
+
+.advice-number > h4 {
+  margin-top: 40px;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  text-align: center;
+  color: hsl(150, 100%, 66%);
+}
+
+.advice-text > p {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+  font-size: 25px;
+  color: hsl(193, 38%, 86%);
+}
+
+.getAdvice {
+  position: relative;
+  bottom: -55px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100px;
+  background-color: hsl(150, 100%, 66%);
+}
+
+.getAdvice:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 15px 5 px hsl(150, 100%, 66%);
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 380px) {
+  main {
+    width: 360px; /* Reducir el ancho del main al 90% del ancho disponible */
+    margin: 80px 0 0 0; /* Centrar el main en la pantalla */
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+  }
+
+  .advice-number > h4 {
+    font-size: 15px; /* Reducir el tamaño de la fuente */
+  }
+
+  .advice-text > p {
+    font-size: 20px;
+    /* Ajustar el ancho del texto al 100% del ancho disponible */
+  }
+
+  section > span > img {
+    width: 300px;
+    margin-left: 25px;
+  }
+
+  .getAdvice {
+    position: relative;
+    left: 150px;
+    top: 50px;
+    width: 50px; /* Reducir el tamaño del botón */
+    height: 50px;
+  }
+
+  .attribution {
+    font-size: 10px; /* Reducir el tamaño de la fuente */
+  }
+}
